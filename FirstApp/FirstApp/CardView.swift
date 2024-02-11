@@ -29,6 +29,16 @@ struct CardView: View {
                     .italic()
             }//:VStack
             .offset(y: -218)
+            
+            Button(action: {
+                print("按钮被单击")
+            }){
+                Text("技术总监")
+                    .fontWeight(.heavy)
+                    .foregroundColor(.white)
+                    .accentColor(.white)
+            } //: Button
+            .offset(y: 218)
         } //: ZStack
         .frame(width: 335, height: 545)
         .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
