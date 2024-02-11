@@ -33,10 +33,20 @@ struct CardView: View {
             Button(action: {
                 print("按钮被单击")
             }){
-                Text("技术总监")
-                    .fontWeight(.heavy)
-                    .foregroundColor(.white)
-                    .accentColor(.white)
+                HStack{
+                    Text("技术总监")
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .accentColor(.white)
+                    Image(systemName: "arrow.right.circle")
+                        .font(Font.title.weight(.medium))
+                        .accentColor(.white)
+                }//: HStack
+                .padding(.vertical)
+                .padding(.horizontal, 24)
+                .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
+                .clipShape(Capsule())
+                .shadow(color: Color("ColorShadow"), radius: 6, x: 0, y: 3)
             } //: Button
             .offset(y: 210)
         } //: ZStack
