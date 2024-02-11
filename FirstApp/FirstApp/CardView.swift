@@ -38,7 +38,7 @@ struct CardView: View {
                     .foregroundColor(.white)
                     .accentColor(.white)
             } //: Button
-            .offset(y: 218)
+            .offset(y: 210)
         } //: ZStack
         .frame(width: 335, height: 545)
         .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .top, endPoint: .bottom))
