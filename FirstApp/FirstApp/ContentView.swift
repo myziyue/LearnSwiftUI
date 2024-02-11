@@ -15,5 +15,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .previewDevice("iPhone 13 Pro")
+        .previewLayout(.sizeThatFits)
+//        .previewDevice("iPhone 13 Pro")
 }
